@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+:root{
+ --first-color: #ff9900;
+ --primary-color: #fff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Roboto', sans-serif;
+}
+
+body{
+  background-color: #101010;
+  color: var(--primary-color);
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h1 strong{
+  font-size: 6rem;
+  color: var(--first-color);
+}
+
+
+.firstSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left;
+  background-size: cover;
+  background-image: url("./img/bela-foto-de-montanhas-rochosas-cobertas-de-neve-branca.jpg");
+}
+
+.subContainer{
+  width: 80%;
+}
+
+
+.textOne{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons{
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+#btnOne{
+  color: #000000;
+  background-color: #fff;
+  width: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 3px solid #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#btnOne:hover{
+  -webkit-box-shadow: 0px 15px 25px -12px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 15px 25px -12px rgba(255,255,255,1);
+  box-shadow: 0px 15px 25px -12px rgba(255,255,255,1);
+}
+
+#btnTwo{
+  background-color: transparent;
+  width: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 3px solid #fff;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#btnTwo:hover{
+  color: #000000;
+  background-color: #fff;
+}
+
+.main-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.who{
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #292727;
+}
+.alignItens{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.perfil{
+  margin-top: 50px;
+}
+
+.perfilImg{
+  width: 270px;
+  height: 480px;
+  background-color: grey;
+}
+
+.perfilText{
+  background-color: grey;
+  width: 270px;
+  height: 480px;
+}
+
+.rowDisplay{
+  display: flex;
+  justify-content: space-evenly;
+}
+
