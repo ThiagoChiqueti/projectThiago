@@ -166,6 +166,7 @@ h2 strong{
 @media(max-width: 780px){
   .firstSection{
     background-position: right;
+    line-height: 1rem;
   }
   .textOne{
     gap: 5px;
