@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
 :root{
- --first-color: #ff9900;
+ --first-color: #1eff00;
  --primary-color: #fff;
 }
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Roboto', sans-serif;
+  font-family:'Montserrat', sans-serif;
 }
 
 body{
@@ -15,14 +17,22 @@ body{
   color: var(--primary-color);
 }
 
-h1{
-  font-size: 4rem;
+h2{
+  font-size: 3rem;
 }
 
-h1 strong{
-  font-size: 6rem;
+h2 strong{
+  font-size: 5rem;
   color: var(--first-color);
 }
+
+.header{
+  background-color: var(--first-color);
+  width: 100%;
+  height: 100px;
+  position: fixed;
+}
+
 
 
 .firstSection{
@@ -36,7 +46,8 @@ h1 strong{
   background-position: left;
   background-size: cover;
   background-image: url("./Img/montanha.jpg");
-
+  line-height: 4rem;
+  letter-spacing: 0.3rem;
 }
 
 .subContainer{
@@ -113,20 +124,36 @@ h1 strong{
 }
 
 .perfilImg{
-  width: 270px;
+  min-width: 270px;
   height: 480px;
   background-color: grey;
 }
 
 .perfilText{
-  background-color: grey;
-  width: 270px;
-  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  min-width: 300px;
+  max-width: 450px;
+}
+
+.dados{
+  width: 100%;
+  height: 150px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: 'Roboto', sans-serif;
+  
+
 }
 
 .rowDisplay{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .footer{
@@ -135,3 +162,20 @@ h1 strong{
   background-color: #ff9900;
 }
 
+
+@media(max-width: 780px){
+  .firstSection{
+    background-position: right;
+  }
+  .textOne{
+    gap: 5px;
+  }
+  .perfilText{
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-width: 300px;
+    max-width: 450px;
+  }
+}
