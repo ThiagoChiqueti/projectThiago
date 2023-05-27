@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
 
 :root{
- --first-color: #1eff00;
+ --first-color: #f7de01;
  --primary-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 *{
@@ -16,13 +20,19 @@ body{
   background-color: #101010;
   color: var(--primary-color);
 }
-
-h2{
-  font-size: 3rem;
+h1{
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+h1 strong{
+  color: var(--first-color);
+}
+.firstSection h2{
+  font-size: 2rem;
 }
 
-h2 strong{
-  font-size: 5rem;
+.firstSection h2 strong{
+  font-size: 3rem;
   color: var(--first-color);
 }
 
@@ -50,6 +60,7 @@ h2 strong{
   letter-spacing: 0.3rem;
 }
 
+
 .subContainer{
   width: 80%;
 }
@@ -58,7 +69,8 @@ h2 strong{
 .textOne{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  width: 80%;
 }
 
 .buttons{
@@ -71,7 +83,7 @@ h2 strong{
   color: #000000;
   background-color: #fff;
   width: 150px;
-  padding: 10px;
+  padding: 20px;
   font-size: 1rem;
   border: 3px solid #fff;
   transition: 0.5s;
@@ -114,7 +126,6 @@ h2 strong{
 }
 .alignItens{
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -154,7 +165,14 @@ h2 strong{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
+}
+
+.section2{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer{
