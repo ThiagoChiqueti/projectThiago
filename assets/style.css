@@ -183,6 +183,17 @@ h1 strong{
 
 
 @media(max-width: 780px){
+  h1{
+    font-size: 2.5rem;
+  }
+  .firstSection h2{
+    font-size: 1.5rem;
+  }
+  
+  .firstSection h2 strong{
+    font-size: 2.2rem;
+    color: var(--first-color);
+  }
   .firstSection{
     background-position: right;
     line-height: 3.5rem;
