@@ -59,6 +59,12 @@ h1 strong{
   line-height: 4rem;
   letter-spacing: 0.3rem;
 }
+.title{
+  width: 370px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 
 
 .subContainer{
@@ -103,6 +109,7 @@ h1 strong{
   font-size: 1rem;
   border: 3px solid #fff;
   color: #fff;
+  padding: 20px;
   transition: 0.5s;
 }
 
@@ -170,9 +177,41 @@ h1 strong{
 
 .section2{
   width: 100%;
-  height: 600px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-direction: column;
+}
+
+.sectionColor2{
+  background-color: #1b1a1a;
+  margin-top: 10px;
+}
+
+.cards{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card{
+  min-width: 150px;
+  min-height: 150px;
+  background-color: #1a1a1d;
+  border-radius: 10px;
+  -webkit-box-shadow: 7px 11px 44px -11px rgba(77,77,77,1);
+  -moz-box-shadow: 7px 11px 44px -11px rgba(77,77,77,1);
+  box-shadow: 7px 11px 44px -11px rgba(77,77,77,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer{
@@ -184,7 +223,7 @@ h1 strong{
 
 @media(max-width: 780px){
   h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .firstSection h2{
     font-size: 1.5rem;
@@ -209,4 +248,19 @@ h1 strong{
     min-width: 300px;
     max-width: 450px;
   }
+}
+
+
+@media(max-width: 415px){
+  h1{
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .firstSection h2{
+    font-size: 1.3rem;
+  }
+
+.title{
+  width: 100%;
+}
 }
